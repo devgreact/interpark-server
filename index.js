@@ -102,7 +102,7 @@ app.get("/visual", (req, res) => {
   res.send(result);
 });
 // recommend 영역에 출력할 자료 요청
-// localhost:4000/visual
+// localhost:4000/recommend
 app.get("/recommend", (req, res) => {
   const result = {
     total: 12,
@@ -187,6 +187,12 @@ app.get("/recommend", (req, res) => {
       url: "go.html",
     },
   };
+  res.send(result);
+});
+
+// tour 영역에 출력할 자료 요청
+app.get("/tour", (req, res) => {
+  const result = {};
   res.send(result);
 });
 
